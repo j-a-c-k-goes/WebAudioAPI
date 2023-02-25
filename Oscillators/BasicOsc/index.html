@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructing an Oscillator</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="range_meter.css">
+</head>
+<body>
+	<h1>simple oscillator</h1>
+	<!-- Gain -->
+	<p>gain</p>
+	<p id="volume_label"></p>
+	<input type="range" 
+		   max=1 
+		   value=0.5
+		   step=0.01 
+		   id="volume_slider">
+	<hr />
+
+	<!-- Frequency -->
+	<p>frequency</p>
+	<p id="frequency_readout"></p>
+	<input type="range"
+		   list="frequency_stops" 
+	       id="frequency_slider" 
+	       name="" 
+	       value=440
+	       max=1600
+	       min=0 
+	       step=.5>
+	<hr />
+
+	<!-- Wave Selection -->
+	<h2>choose wave type</h2>
+	<select id="type_of_wave">
+		<option value="sine">sine</option>
+		<option value="square">square</option>
+		<option value="triangle">triangle</option>
+		<option value="sawtooth">sawtooth</option>
+	</select>
+	<hr />
+
+	<!-- Start/stop audio -->
+	<button id="start_audio"
+	        onclick="start_stop()">
+	        	start/stop
+	</button>
+	
+	<!-- JavaScript -->
+	<script src="index.js"></script>
+</body>
+</html>

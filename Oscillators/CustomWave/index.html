@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Custom Square Wave</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<div class="interface">
+		<h1>Custom Square Wave</h1>
+		<!-- Gain -->
+		<section>
+			<h4>Gain</h4>
+			<p id="gain_slider"></p>
+			<input type="range"
+				   min=0 
+				   max=1 
+				   value=0.5
+				   step=0.01 
+				   id="volume_slider">
+		</section>
+		<!-- Frequency of Custom Square Wave -->
+	    <section>
+			<h4>Frequency <span id="frequency_readout">440</span> kHz</h4>
+			<input type="range"
+			       default=440
+			       min=1
+			       max=1000
+			       id="frequency_meter" 
+			       name="">
+	    </section>
+		<!-- Start the sound -->
+		<section>	
+			<h4>Start/Stop</h4>
+			<button onclick="audio.start_stop()">Start</button>
+		</section>
+		<script src="index.js"></script>
+	</div>
+</head>
+<body>
+
+</body>
+</html>

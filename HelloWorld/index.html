@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section>
+		<h1>creating an audio context: a node based-process</h1>
+	</section>
+	<hr>
+	<section>
+		<label for="gain_control">gain control</label>
+		<code id="gain_readout"></code>
+		<input type="range" id="gain_slider" name="" max=1 min=.1 step=.1>
+	</section>
+	<hr>
+	<section>
+		<section>
+			<label for="wave_frequency">wave frequency slider</label>
+			<code id="wave_readout"></code>
+			<input type="range"
+				   list="frequency_stops" 
+			       id="wave_frequency_slider" 
+			       name="" 
+			       value=440
+			       max=1600
+			       min=0 
+			       step=.5>
+			<datalist id="frequency_stops">
+				<option value="0"></option>
+				<option value="36"></option>
+				<option value="120"></option>
+				<option value="240"></option>
+				<option value="360"></option>
+				<option value="440"></option>
+				<option value="472"></option>
+				<option value="540"></option>
+				<option value="672"></option>
+			</datalist>
+		</section>
+		<section class="" id="wave_types">
+			<label for="choose_wave">choose wave<label>
+			<button class="choose_wave" id="sine">sine</button>
+			<button class="choose_wave" id="square">square</button>
+			<button class="choose_wave" id="sawtooth">sawtooth</button>
+			<button class="choose_wave" id="triangle">triangle</button>
+		</section>
+	</section>
+	<hr>
+	<section>
+		<button id="start_audio" onclick="start_stop()">start</button>
+	</section>
+	<script src="./index.js"></script>
+</body>
+</html>

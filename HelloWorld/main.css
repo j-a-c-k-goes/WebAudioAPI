@@ -1,0 +1,28 @@
+body {
+	padding: 128px;
+	font-family: "Menlo", monospace;
+}
+section {
+	display: flex;
+	flex-direction: column;
+}
+code { font-size: 1.00rem; text:transform: uppercase; }
+h1{ font-size: 1.04rem; }
+button { 
+	font-family:inherit;
+	margin: 12px;
+	padding: 8px;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 1.00rem;
+	width: 15%;
+	height: 10%;
+	border-radius: 12px;
+	background: none; 
+	border: 2px solid black; 
+}
+button:hover {
+	border: none;
+	background-color: blue;
+	color: white;
+}

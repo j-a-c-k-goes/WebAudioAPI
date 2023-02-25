@@ -1,0 +1,88 @@
+input[type=range] {
+/*  height: 61px;*/
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 50%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+/*  width: 100%;*/
+/*  height: 30px;*/
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgb(0,0,0);
+  background: rgb(255,255,255);
+  border-radius: 50px;
+  border: 4px solid rgb(0,0,0);
+}
+input[type=range]::-webkit-slider-thumb {
+/*  box-shadow: 5px 5px 2px #000000;*/
+  border: 0px solid rgb(0,0,0);
+  height: 32px;
+  width: 32px;
+  border-radius: 50px;
+  background: #050505;
+  cursor: pointer;
+  -webkit-appearance: none;
+/*  margin-top: -12px;*/
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgb(225,225,225);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px #000000;
+  background: rgb(255,255,255);
+  border-radius: 50px;
+  border: 4px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 5px 5px 2px #000000;
+  border: 0px solid #000000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: #050505;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #FFF5F5;
+  border: 4px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #FFF5F5;
+  border: 4px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 5px 5px 2px #000000;
+  border: 0px solid #000000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: #050505;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #FFF5F5;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #FFF5F5;
+}
